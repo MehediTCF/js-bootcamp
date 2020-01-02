@@ -32,3 +32,8 @@ let tipcal = function (bill, per = 0.2) {
 
 let res1 = tipcal(100, 0.5)
 console.log(res1)
+
+//template strings 
+
+let name = 'Hasan'
+console.log(`My name is ${name}`)
