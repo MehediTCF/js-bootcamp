@@ -5,3 +5,11 @@ let myBook = {
 }
 
 console.log(myBook.author)
+
+let myInfo = {
+    name: 'Hasan',
+    address: 'Zigatola',
+    phone: 0167
+}
+
+console.log(myInfo)

@@ -15,6 +15,7 @@ let getBook = function (book) {
 
 }
 
+
 getBook(myBook)
 getBook(otherBook)
 
@@ -25,9 +26,12 @@ let myAccount = {
     income: 100
 }
 
+
+
 let addIncome = function (account, amount) {
     account.income = account.income + amount
     console.log(account)
 }
 
 addIncome(myAccount, 2.5)
+addIncome(myAccount, 500)
