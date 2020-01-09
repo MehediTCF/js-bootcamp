@@ -10,11 +10,11 @@
     <script type="text/javascript">
         window.onload = function () {
             var output = document.getElementById('output');
-            var Closure = myClosure()
-            output.innerHTML = Closure()
+            var Closure = myClosure2()
+            output.innerHTML = Closure.call()
             window.setTimeout(function () {
 
-                output.innerHTML += '<br/>' + Closure()
+                output.innerHTML += '<br/>' + Closure.call()
 
             }, 500);
 
@@ -25,11 +25,22 @@
         }
 
         //like class
-
         function myClosure() {
             var date = new Date()
             return function () {
                 return date.getMilliseconds()
+            }
+        }
+
+        //using object literals
+        var myClosure2 = function () {
+            var date = new Date()
+            var NestedFunc = function () {
+                return date.getMilliseconds()
+            }
+
+            return {
+                call: NestedFunc
             }
         }
     </script>
