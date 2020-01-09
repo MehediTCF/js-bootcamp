@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using Functions</title>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var output = document.getElementById('output');
+            var Closure = myClosure()
+            output.innerHTML = Closure()
+            window.setTimeout(function () {
+
+                output.innerHTML += '<br/>' + Closure()
+
+            }, 500);
+
+        }
+        function myNonClosure() {
+            var date = new Date();
+            return date.getMilliseconds();
+        }
+
+        //like class
+
+        function myClosure() {
+            var date = new Date()
+            return function () {
+                return date.getMilliseconds()
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id='output'></div>
+
+</body>
+
+</html>
