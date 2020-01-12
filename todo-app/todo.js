@@ -8,4 +8,4 @@ paragraphs.forEach(function (para) {
 
 })
 
-// doing nothing, just for mandatorty push :3
+// doing nothing, just for mandatorty push! 
