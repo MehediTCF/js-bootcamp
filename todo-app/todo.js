@@ -8,6 +8,7 @@ paragraphs.forEach(function (para) {
 
 })
 
+<<<<<<< HEAD
 document.querySelector('button').addEventListener('click', function (e) {
     e.target.textContent = 'Buton Clicked!'
 
