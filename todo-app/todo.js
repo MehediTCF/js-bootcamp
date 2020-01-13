@@ -7,5 +7,3 @@ paragraphs.forEach(function (para) {
 
 
 })
-
-// doing nothing, just for mandatorty push! 
