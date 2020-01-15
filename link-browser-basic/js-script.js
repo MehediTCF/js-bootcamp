@@ -36,3 +36,9 @@ document.querySelector('#removeh3').addEventListener('click', function () {
         note.remove()
     })
 })
+
+document.querySelector('#search-box').addEventListener('input', function (e) {
+    let ss = document.querySelector('h3.tin')
+    ss.textContent = e.target.value
+    // console.log(e.target.value)
+})
