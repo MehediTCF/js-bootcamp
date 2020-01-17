@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Booklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="alert alert-primary" role="alert" style="font-size: larger; text-align: center;">
+            My Booklist
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="bookname">Book Name</label>
+                <input type="text" class="form-control" id="bookname" aria-describedby="bookHelp"
+                    placeholder="Book Name">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" aria-describedby="authorHelp" placeholder="Author">
+            </div>
+            <button type="submit" id="submit" class="btn btn-info btn-lg btn-block"
+                style="margin-bottom: 30px;">Submit</button>
+        </form>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Book Name</th>
+                    <th scope="col">Author</th>
+                </tr>
+            </thead>
+            <tbody id="booklist">
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="booklist.js"></script>
+
+</body>
+
+</html>
