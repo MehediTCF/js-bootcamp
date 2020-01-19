@@ -1,8 +1,4 @@
-// document.querySelector('#search-box').addEventListener('input', function (e) {
-//     let ss = document.querySelector('h3.tin')
-//     ss.textContent = e.target.value
-//     // console.log(e.target.value)
-// })
+
 // not working app
 let addbook = function () {
     document.querySelectorAll('#bookname, #author').addEventListener('change', function (e) {
